@@ -1,0 +1,16 @@
+/* Sebastián Meneses Molina - 2240311 - Estudiante A (Lider Maquetación y Grid)
+   David Neira Conde - - Estudiante B (Lider Componentes, UI e Interacciones)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 1px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e1dee7;
+    color: #222;
+}

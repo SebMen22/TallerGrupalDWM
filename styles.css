@@ -2,15 +2,59 @@
    David Neira Conde - - Estudiante B (Lider Componentes, UI e Interacciones)
 */
 
+/* config*/
+
 * {
     box-sizing: border-box;
-    margin: 10px;
-    padding: 1px;
+    margin: 0%;
+    padding: 0px;
 }
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     background-color: #e1dee7;
     color: #222;
+}
+
+
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    margin-bottom: 40px;
+}
+
+/*Galeria de Experiencias*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Adaptabilidad para pantallas de dif dispositivos*/
+
+@media (max-width: 768px) {  /*Tablet*/
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {  /*Celular*/
+
+    .grid-container { 
+        grid-template-columns: 1fr;
+    }
+
 }
